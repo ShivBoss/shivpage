@@ -25,7 +25,7 @@ SECRET_KEY = '6rbtxh&q@!))#+uy#zs814=i!cz#uzcg5@5&b_g#__$=$sj33v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['skeshri.heroku.com']
+ALLOWED_HOSTS = ['skeshri.herokuapp.com']
 
 
 # Application definition
