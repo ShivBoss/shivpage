@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block jumbo %}
+
+<div class='container'>
+	<div class="jumbotron" style="background-color: rgb(207, 255, 224)">
+		
+		<div class="row">
+			<div class="col-sm-6" style='font-style:italic;'>
+				<p style="font-size: 50px;">Shiv Prakash Keshri</p>
+				<p class="text-primary text-justify" style="font-size: 25px;"">I'm an ambitious person. I never consider myself in competition with anyone, and I'm not saying that from an arrogant standpoint, it's just that my journey started so, so long ago, and I'm still on it and I won't stand still.</p>
+				<!-- <p><a class="btn btn-lg btn-primary" href="{% url 'mail' %}" role="button">Mail Me</a></p> -->
+			</div>
+
+			<div class="col-sm-6">
+				<img class="img-responsive img-rounded" src="{% static 'img/shivP.jpg' %}" />
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+<div class="container">
+	<div class='jumbotron'>
+		<div class='row'>
+		<div class="col-md-6">
+			<img class="img-responsive img-rounded" src="{% static 'img/shivdj.jpg' %}" />
+		</div>
+
+		<div class="col-md-6">
+			<center><h2 class="text-danger">My Profile</h2></center><br/>	
+
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px'>
+
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Full Name</div>
+					<div class="col-md-7">: Shiv Prakash Keshri</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Nick Name</div>
+					<div class="col-md-7">: Shiva</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Born</div>
+					<div class="col-md-7">: 12-Aug-1992, Bihar</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Language</div>
+					<div class="col-md-7">: Hindi, English</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Alma mater</div>
+					<div class="col-md-7">: BCE Bhagalpur,<br/>&nbsp; NGP Patna-13</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Employer</div>
+					<div class="col-md-7">: JMR Infotech(2016-Present)</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-md-1"></div>
+					<div class="col-md-4">Hobbies</div>
+					<div class="col-md-7">: Dancing, Poem Writing</div>
+				</div>
+
+				<div class="row text-success" style='font-style:italic; font-size: 18px''>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-4">Extra Curricular Activities</div>
+					<div class="col-sm-7"><br/>: Cycling</div>
+				</div>
+		</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+
+<div class="container">
+
+	<div class="col-sm-6">
+
+		<div class="jumbotron" style='background-color: rgba(204, 27, 91, 0.18);'>
+			<div class='row'>
+				<div class='col-sm-12 text-info'>
+					<p class='text-center' style="font-size: 25px; font-style:italic;">Catch Me on Social Media</p>
+				</div>
+			</div>
+
+			<div class='row'>
+
+				<div class='col-sm-2'>
+				</div>
+				<div class='col-sm-2'>
+					<a href="https://www.facebook.com/siva.keshri"><i class="fa fa-facebook-official fa-4x" aria-hidden="true" style="color: #365899;"></i></a>
+				</div>
+				<div class='col-sm-2'>
+					<a href="https://twitter.com/SIVA_KESHRI"><i class="fa fa-twitter-square fa-4x" aria-hidden="true" style="color: #1c94e0;"></i></a>
+				</div>
+				<div class='col-sm-2'>
+					<a href="https://www.instagram.com/siva_d_boss"><i class="fa fa-instagram fa-4x" aria-hidden="true" style="color: #3f729b;"></i></a>
+				</div>
+				<div class='col-sm-2'>
+					<a href="https://www.linkedin.com/in/shiv-prakash-keshri-8990627b/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" style="color: #0077B5"></i></a>
+				</div>
+				<div class='col-sm-2'>
+				</div>
+
+			</div>
+
+
+		</div>
+		
+	</div>
+	<div class="col-sm-6">
+		<div class="jumbotron" style='background-color: rgba(204, 27, 91, 0.18);'>
+			<div class='row'>
+				<div class='col-sm-12 text-info'>
+					<p class='text-center' style="font-size: 25px; font-style:italic;">Share My Page on Social Media</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class='col-sm-3'>
+				
+				</div>
+				<div class='col-sm-2'>
+					<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"><i class="fa fa-facebook-official fa-4x" aria-hidden="true" style="color: #365899;"></i></a>
+				</div>
+				<div class='col-sm-2'>
+					<a href="http://twitter.com/share?text=Shiv's%20Django%20Project&url={{ request.build_absolute_uri }}"><i class="fa fa-twitter-square fa-4x" aria-hidden="true" style="color: #1c94e0;"></i></a>
+				</div>
+
+				<div class='col-sm-2'>
+					<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title=Shiv's%20Profile&summary=Shiv's%20Django%20Project&source={{ request.build_absolute_uri }}"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" style="color: #0077B5"></i></a>
+				</div>
+				<div class='col-sm-3'>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+<!-- <div class="container">
+	<div class="jumbotron" style='background-color: rgba(204, 27, 91, 0.18);'>
+		<div class='row'><div class="caption">
+
+			<div class='col-sm-1'> -->
+				<!-- <img class="img-responsive" src="{% static 'img/social_ic.png' %}"/> -->
+			<!-- </div>
+			
+			<div class='col-sm-6 text-info'>
+				<p style="font-size: 25px; font-style:italic;">Catch Me on Social Media</p>
+			</div>
+			<div class='col-sm-5 text-info'>
+				<p style="font-size: 25px; font-style:italic;">Share My Page on Social Media</p>
+			</div></div>
+			
+		</div>
+
+		<div class='row'>
+
+			<div class='col-sm-1'>
+				
+			</div>
+			<div class='col-sm-1'>
+				<a href="https://www.facebook.com/siva.keshri"><i class="fa fa-facebook-official fa-4x" aria-hidden="true" style="color: #365899;"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				<a href="https://twitter.com/SIVA_KESHRI"><i class="fa fa-twitter-square fa-4x" aria-hidden="true" style="color: #1c94e0;"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				<a href="https://www.instagram.com/siva_d_boss"><i class="fa fa-instagram fa-4x" aria-hidden="true" style="color: #3f729b;"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				<a href="https://www.linkedin.com/in/shiv-prakash-keshri-8990627b/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" style="color: #0077B5"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				
+			</div>
+			<div class='col-sm-1'>
+				
+			</div>
+			<div class='col-sm-1'>
+				
+			</div>
+			<div class='col-sm-1'>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"><i class="fa fa-facebook-official fa-4x" aria-hidden="true" style="color: #365899;"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				<a href="http://twitter.com/share?text=Shiv's%20Django%20Project&url={{ request.build_absolute_uri }}"><i class="fa fa-twitter-square fa-4x" aria-hidden="true" style="color: #1c94e0;"></i></a>
+			</div>
+
+			<div class='col-sm-1'>
+				<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title=Shiv's%20Profile&summary=Shiv's%20Django%20Project&source={{ request.build_absolute_uri }}"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true" style="color: #0077B5"></i></a>
+			</div>
+			<div class='col-sm-1'>
+				
+			</div>
+			
+			
+		</div>
+
+
+
+	</div>
+</div>
+ -->

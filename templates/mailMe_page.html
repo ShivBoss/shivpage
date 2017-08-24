@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+
+{% block form %}
+
+<div class="container">
+	<div class="jumbotron" style="background-color: rgb(207, 255, 224);">
+		<div class="row">
+
+			<p class="text-primary text-center" style='font-style:italic; font-size: 50px;'>Send Me Feedback or Suggestion</p>
+
+			
+		  	<div class ="col-sm-8 col-sm-offset-2">
+		  		<p class='text-justify text-info'>The purpose of develop of this page is learning Python- Django, Bootstrap. If you have any feedback and/or suggestion, Please Mail Me here.</p>
+
+					{% if messages %}
+						<ul class="messages">
+						    {% for message in messages %}
+						    <li{% if message.tags %} class="text-primary text-center"{% endif %} style='font-size: 25px;'>{{ message }}</li>
+						    {% endfor %}
+						</ul>
+					{% endif %}
+
+				<form method="POST", action="" enctype="multipart/form-data">{% csrf_token %}
+					
+					{{ form|crispy }}
+
+					<button type="submit" name="mail" class="btn btn-primary pull-right">Mail Me</button>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}
