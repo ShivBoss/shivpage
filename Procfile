@@ -1,1 +1,1 @@
-web: gunicorn shivpage.wsgi
+web: gunicorn shivpage.wsgi --log-file -
