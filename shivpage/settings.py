@@ -30,7 +30,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 
-ALLOWED_HOSTS = ['shivpage.herokuapp.com']
+ALLOWED_HOSTS = ['skeshri.herokuapp.com'] 
 
 
 # Application definition
