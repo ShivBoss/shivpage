@@ -24,7 +24,7 @@ def mailme(request):
 	if form.is_valid():
 		ins = form.save(commit=False)
 		ins.save()
-		messages.info(request, 'Thank You for mailing us!!!')
+		messages.info(request, 'Thank You for mailing me!!!')
 		return HttpResponseRedirect(reverse("mail"))
 
 	context = {
@@ -49,10 +49,8 @@ def myblog(request):
 	try:
 		queryset = paginator.page(page)
 	except PageNotAnInteger:
-		# If page is not an integer, deliver first page.
 		queryset = paginator.page(1)
 	except EmptyPage:
-		# If page is out of range (e.g. 9999), deliver last page of results.
 		queryset = paginator.page(paginator.num_pages)
 
 	context = {

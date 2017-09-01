@@ -21,6 +21,8 @@
 						    <li{% if message.tags %} class="text-primary text-center"{% endif %} style='font-size: 25px;'>{{ message }}</li>
 						    {% endfor %}
 						</ul>
+
+						
 					{% endif %}
 
 				<form method="POST", action="" enctype="multipart/form-data">{% csrf_token %}
@@ -37,3 +39,6 @@
 </div>
 
 {% endblock %}
+
+
+

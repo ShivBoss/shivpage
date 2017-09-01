@@ -11,5 +11,3 @@ urlpatterns = [
     url(r'^blog/(?P<id>\d+)/$', spk_url.blog_detail, name='detail'), 
     
 ]
-
-

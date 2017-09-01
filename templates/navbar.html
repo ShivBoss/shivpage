@@ -1,6 +1,6 @@
 {% load static %}
 
-<nav class="navbar navbar-default navbar-static-top" style="background-color: #b8ff57 !important;">
+<nav class="navbar navbar-default navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -19,7 +19,6 @@
 
 			<form class="navbar-form navbar-right" method="GET" action="{% url 'blog' %}" >
 				<div class="input-group">
-				<!-- <div class="form-group"> -->
 					<input type="text" name="q" class="form-control" placeholder="Search" value="{{ request.GET.q }}"> 
 					
 					<span class="input-group-btn">

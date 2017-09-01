@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
-
+<!-- style="padding-right: 200px; padding-left: 200px;" -->
 {% block blog %}
 
-<div class="container" style="padding-right: 200px; padding-left: 200px;">
-<div class="jumbotron text-center" style="background-color: rgb(207, 255, 224);">
-  <div class="row text-primary" style='font-style:italic;'>
-  <h1>My Images and Blogs</h1>
+<div class="container" >
+<div class="jumbotron" style="background-color: rgb(207, 255, 224);">
+  <div class="row">
+  <div class="col-xs-12 text-center text-primary" style='font-style:italic;'>
+  <H1>My Images and Blogs</H1>
+  </div>
  </div>
 </div>
 </div>
 {% for obj in obj_list%}
- <div class="container" style="padding-right: 120px; padding-left: 120px;">
-	<!-- <div class="jumbotron" style="background-color: rgb(207, 255, 224);">  -->
+ <div class="container" >
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
 			<div class="thumbnail">
@@ -25,19 +26,18 @@
 				<div class="caption">
 					<h1><a href="{% url 'detail' id=obj.id %}">{{ obj.title }}</a><small>&nbsp;&nbsp;{{ obj.timestamp }}</small></h1>
 
+					{% if obj.context %}
 					<h2>{{ obj.context|linebreaks|truncatechars:120 }}</h2>
-					
+					{% endif %}
 
 				</div>
 			</div>
 			</div>
 		</div>
- 	<!-- </div> -->
 </div> 
 
 {% endfor %}
-
-<div class="container" style="padding-right: 200px; padding-left: 200px;">
+<div class="container" >
 <div class="jumbotron text-center" style="background-color: rgb(207, 255, 224); font-size: 30px; padding-top: 0px; padding-bottom: 0px;""> 
 
 <div class="pagination">
@@ -60,6 +60,3 @@
 </div>
 
 {% endblock %}
-
-
-<!-- padding-right: 120px; padding-left: 120px; font-size: 30px; padding-top: 0px; padding-bottom: 0px;"> -->

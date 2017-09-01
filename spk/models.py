@@ -6,10 +6,8 @@ from django.db import models
 class ImgBlog(models.Model):
 
 	title = models.CharField(max_length=120)
-	image = models.ImageField(null=True, blank=True, width_field="width_field", height_field='height_field')
-	height_field = models.IntegerField(default=0)
-	width_field = models.IntegerField(default=0)
-	context = models.TextField()
+	image = models.ImageField(null=True, blank=True)
+	context = models.TextField(blank=True)
 	updated = models.DateTimeField(auto_now=True,auto_now_add=False)
 	timestamp = models.DateTimeField(auto_now=False,auto_now_add=True)
 
